@@ -3,8 +3,8 @@ Go Package to safely call a function which may panic. The returned error can the
 
 ## Usage
 ```go
-		preventpanic.Run[any](func() any {
-			xraysegment.AddAnnotation("token", token)
-			return nil
-		})
+preventpanic.Run[any](func() any {
+    xraysegment.AddAnnotation("token", token)
+    return nil
+})
 ```
